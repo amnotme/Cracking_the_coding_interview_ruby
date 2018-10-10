@@ -6,7 +6,7 @@
 #    By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/10/10 00:49:49 by lhernand          #+#    #+#              #
-#    Updated: 2018/10/10 01:33:29 by lhernand         ###   ########.fr        #
+#    Updated: 2018/10/10 01:42:30 by lhernand         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,7 +34,8 @@ def		palindromePermutation(arr)
 	i = 0
 	count = 0
 	while (char_arr[i])
-		return false if char_arr[i] > 2
+		count += 1 if char_arr[i] % 2 == 1
+		return false if count > 2
 		i += 1
 	end
 	return true 
