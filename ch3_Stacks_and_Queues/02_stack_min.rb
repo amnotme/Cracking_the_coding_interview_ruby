@@ -6,7 +6,7 @@
 #    By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/10/11 04:08:04 by lhernand          #+#    #+#              #
-#    Updated: 2018/10/11 04:10:01 by lhernand         ###   ########.fr        #
+#    Updated: 2018/10/11 04:13:13 by lhernand         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -97,10 +97,19 @@ s.push(100)
 s.push(6)
 s.push(7)
 s.push(2)
+puts s.min
 s.push(1)
 s.push(70)
 s.push(-1)
 s.push(666)
 
 s.printit
+puts s.min
 
+s.pop
+s.pop
+s.pop
+s.pop
+s.pop
+s.printit
+puts s.min
