@@ -6,7 +6,7 @@
 #    By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/10/10 20:24:17 by lhernand          #+#    #+#              #
-#    Updated: 2018/10/10 21:50:48 by lhernand         ###   ########.fr        #
+#    Updated: 2018/12/02 23:53:06 by lhernand         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,9 +38,10 @@ class LinkedList
 	def printit
 		node = @head
 		while node && node.next
-			puts node.val
+			print "#{node.val} "
 			node = node.next
 		end
+		print 
 	end
 	
 	def removeDups
@@ -80,14 +81,10 @@ list = LinkedList.new
 
 i = 0
 while i <= 10
-	list.insert(rand(i))
+	list.insert(rand(i % 5))
 	i += 1
-	list.insert(rand(10))
+	list.insert(rand(10 & 5))
 end
 
-list.printit
-puts "Removing dups"
 list.removeDups
 puts "Removed dups"
-list.printit
-puts "Print after dups"

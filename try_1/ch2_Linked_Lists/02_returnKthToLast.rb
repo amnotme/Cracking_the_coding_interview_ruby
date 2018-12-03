@@ -6,7 +6,7 @@
 #    By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/10/10 21:51:17 by lhernand          #+#    #+#              #
-#    Updated: 2018/10/10 23:22:28 by lhernand         ###   ########.fr        #
+#    Updated: 2018/12/03 00:24:17 by lhernand         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -76,7 +76,7 @@ class LinkedList
 			node1 = node1.next
 		end
 
-		while node1
+		while node1.next
 			node1 = node1.next
 			node2 = node2.next
 		end
